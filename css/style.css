@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --red-color:#FF0000;
+    --tomato-color:#FF4346;
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #E9ECEE;    
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:none;
+}
+
+.login{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 564px;
+    height: 398px;
+    background: #E9ECEE;
+    border: 2px solid var(--tomato-color);
+}
+
+.logo{
+    position: absolute;
+    width: 111px;
+    height: 39px;
+    left: 226px;
+    top: 32px;
+    
+}
+
+.log{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 563;
+    font-size: 24px;
+    line-height: 29px;
+    position: absolute;
+    width: 312px;
+    height: 236px;
+    left: 126px;
+    top: 97px;
+    color: #333F4A;
+}
+
+.login_text{
+    position: absolute;
+    width: 312px;
+    height: 30px;
+    left: 126px;
+    top: 151px;
+    border: 0;
+    padding: 10px;
+    background: #E4E6E7;
+    font-weight: 400;
+}
+
+.login_password{
+    position: absolute;
+    width: 312px;
+    height: 30px;
+    left: 126px;
+    top: 204px;
+    border: 0;
+    padding: 10px;
+    background: #E4E6E7;
+    font-weight: 400;
+}
+
+.button{
+    position: absolute;
+    width: 312px;
+    height: 36px;
+    left: 126px;
+    top: 264px;
+    border: 0;
+    background: var(--red-color);
+    color:#FFFFFF;
+    font-weight: 743;
+}
+
+.help{
+    position: absolute;
+    width: 312px;
+    height: 20px;
+    left: 126px;
+    top: 313px;
+    color: #333F4A;
+    font-weight: 633;
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+    
+}
