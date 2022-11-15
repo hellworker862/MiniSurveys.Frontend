@@ -5,6 +5,7 @@
     --tomato-color:#FF4346;
     --button-text-color: #FFF;
     --header-bg-color:#293240;
+    --title-color:#0F2232;
 }
 
 *,
@@ -19,6 +20,10 @@
     text-decoration:none;
 }
 
+body {
+    background-color: #E9ECEE;    
+}
+
 .wrapper {
     display: flex;
     min-height: 100%;
@@ -27,7 +32,7 @@
 }
 
 .container {
-    max-width: 1443px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 
@@ -39,6 +44,11 @@
     background-color: var(--red-color);
     color: var(--button-text-color);
     border-style: none;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
 }
 
 .header {
@@ -68,7 +78,6 @@
 .header-list {
     margin-left: 0;
     padding-left: 0;
-    list-style: none;
     display: flex;
 }
 
@@ -109,6 +118,66 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+}
+
+.main-content {
+    padding-top: 74px;
+}
+
+.title-page {
+    font-style: normal;
+    font-weight: 657;
+    font-size: 28px;
+    line-height: 34px;
+    padding-bottom: 37px;
+    color: var(--title-color);
+}
+
+.block-personal-info {
+    position: relative;
+}
+
+.info-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.fio-info {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--title-color);
+    margin-bottom: 12px;
+}
+
+.departament-info {
+    margin-bottom: 28px;
+}
+
+.number-info {
+    margin-bottom: 23px;
+}
+
+.email-info {
+    margin-bottom: 20px;
+}
+
+.avatar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn-change-password {
+    background-color: var(--tomato-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px 18px;
 }
 
 .login{
