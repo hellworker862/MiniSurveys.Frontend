@@ -1,5 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/*Обнуление*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus,
+  :active {
+    outline: none;
+  }
+  
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  /*--------------------*/
+
 :root {
     --red-color:#FF0000;
     --tomato-color:#FF4346;
@@ -8,20 +101,9 @@
     --title-color:#0F2232;
 }
 
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration:none;
-}
-
 body {
-    background-color: #E9ECEE;    
+    background-color: #E9ECEE;
+    font-family: 'Montserrat', sans-serif;    
 }
 
 .wrapper {
@@ -31,7 +113,43 @@ body {
     flex-direction: column;
 }
 
-
+.content {
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 57px;
+    background-color: var(--header-bg-color);
+    font-size: 20px;
+    padding: 0 10% 0 0;
+}
+.header__logo {
+    max-height: 57px;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+}
+.header__li a{
+    height: 57px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    color: var(--button-text-color);
+}
+.header__li_selected{
+    background-color: #EC1C24;
+    font-weight: 600;
+}
+.header__li a{
+    display: flex;
+    align-items: center;
+}
+.header__li a img{
+    width: 45px;
+    padding-right: 10px;
+}
 
 .input-login {
     padding: 10px;
