@@ -113,6 +113,11 @@ body {
     flex-direction: column;
 }
 
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
 .content {
 }
 .header {
@@ -149,6 +154,59 @@ body {
 .header__li a img{
     width: 45px;
     padding-right: 10px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 657;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.main__title {
+    margin: 74px 0 34px 0;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.personal_info {
+    position: relative;
+}
+
+.personal-info-li {
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.fio-info {
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.personal_info-avatar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 135px;
+    width: 135px;
+}
+
+.personal-info_button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--button-text-color);
+    background-color: var(--tomato-color);
+    padding: 7px 18px;
 }
 
 .input-login {
