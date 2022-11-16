@@ -143,7 +143,7 @@ body {
     padding: 0 12px;
     color: var(--button-text-color);
 }
-.header__li_selected{
+.header__li_active{
     background-color: #EC1C24;
     font-weight: 600;
 }
