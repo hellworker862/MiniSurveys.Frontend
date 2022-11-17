@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,50 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
+
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container"> 
-                <div class="header-row">
-                    <a href="#" class="header-logo link">
-                        <img src="/img/header-logo.png" alt="Логотип" class="header-logo">
+        <div class="content">
+            <header class="header">
+                <div class="header__logo">
+                    <a href="">
+                        <img src="img/header-logo.png" alt="">
                     </a>
-                    <div class="rigth-block">
-                        <nav class="header-menu">
-                            <ul class="header-list list">
-                                <li>
-                                    <a href="#" class="header-link link selected-link">
-                                        <span>Здраствуйте,&nbsp;</span>
-                                        <span>Пользователь</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="header-link link">Пользователи</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="header-link link">Опросы</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="header-link link">Выход</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
                 </div>
-            </div>
-        </header>
+                <ul class="header__list">
+                    <li class="header__li">
+                        <a href="#">
+                            <img src="img/default_avatar.png" alt="" class="avatar">
+                            <span>Фамилия И.О.</span>
+                        </a>
+                    </li>
+                    <li class="header__li header__li_active">
+                        <a href="#">Опросы</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#">Выход</a>
+                    </li>
+                </ul>
+            </header>
+        </div>
         <main class="main">
             <div class="container">
-                <div class="main-content">
-                    <h1 class="title-page">Личный кабинет</h1>
-                    <div class="block-personal-info">
-                        <ul class="info-list list">
-                            <li class="info-item fio-info">Иванов Иван Иванович</li>
-                            <li class="info-item departament-info">Моё подразделение</li>
-                            <li class="info-item number-info">+7 951 955-45-82</li>
-                            <li class="info-item email-info">example@gmail.com</li>
+                <h1 class="main__title title">Личный кабинет</h1>
+                <div class="personal_info">
+                    <div class="personal-info__body">
+                        <ul class="personal-info__list">
+                            <li class="personal-info__li fio-info">Ваше имя фамилия отчество</li>
+                            <li class="personal-info__li departament-info">Наименование подразделения</li>
+                            <li class="personal-info__li number-info">+7 951 955-45-82</li>
+                            <li class="personal-info__li email-info">example@gmail.com</li>
                         </ul>
-                        <img src="./img/default_avatar.png" alt="Аватар юзера" class="avatar">
-                        <button class="button btn-change-password">Сменить пароль</button>
+                        <img src="./img/default_avatar.png" alt="Аватар юзера" class="personal_info-avatar avatar">
+                        <button class="personal-info_button">Сменить пароль</button>
                     </div>
                 </div>
             </div>
         </main>
     </div>
 </body>
+
 </html>

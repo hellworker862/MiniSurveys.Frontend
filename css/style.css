@@ -1,5 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-/*asdasdasd*/
+
+/*Обнуление*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus,
+  :active {
+    outline: none;
+  }
+  
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  /*--------------------*/
+
 :root {
     --red-color:#FF0000;
     --tomato-color:#FF4346;
@@ -8,20 +101,9 @@
     --title-color:#0F2232;
 }
 
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration:none;
-}
-
 body {
-    background-color: #E9ECEE;    
+    background-color: #E9ECEE;
+    font-family: 'Montserrat', sans-serif;    
 }
 
 .wrapper {
@@ -32,112 +114,70 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0px auto;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
-.link{
-    text-decoration: none;
+.content {
 }
-
-.button {
-    background-color: var(--red-color);
-    color: var(--button-text-color);
-    border-style: none;
-    cursor: pointer;
-}
-
-.list {
-    list-style: none;
-}
-
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 57px;
     background-color: var(--header-bg-color);
+    font-size: 20px;
+    padding: 0 10% 0 0;
 }
-
-.header-row{
+.header__logo {
+    max-height: 57px;
+}
+.header__list {
     display: flex;
-    height: 57px;align-items: center;
-    float: right;
+    align-items: center;
 }
-
-.header-row .link {
-    max-height: 58px;
-}
-
-.header-logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.rigth-block {
-    display: flex;
-}
-
-.header-list {
-    margin-left: 0;
-    padding-left: 0;
-    display: flex;
-}
-
-.header-list li{
-    list-style-type: none;
+.header__li a{
     height: 57px;
     display: flex;
     align-items: center;
-}
-
-.header-link {
-    display: flex;
-    align-items: center;
-    color: var(--button-text-color);
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 420;
-    font-size: 20px;
-    line-height: 24px;
     padding: 0 12px;
-    height: 57px;
+    color: var(--button-text-color);
 }
-
-.input-login {
-    padding: 10px;
-    background: #E4E6E7;
-    font-weight: 400;   
-    border: 0;
-}
-
-.selected-link{
+.header__li_active{
     background-color: #EC1C24;
+    font-weight: 600;
+}
+.header__li a{
     display: flex;
     align-items: center;
-    padding: 0 10px;
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+}
+.header__li a img{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
 }
 
-.main-content {
-    padding-top: 74px;
-}
-
-.title-page {
+.title {
     font-style: normal;
     font-weight: 657;
     font-size: 28px;
     line-height: 34px;
-    padding-bottom: 37px;
-    color: var(--title-color);
 }
 
-.block-personal-info {
+.main__title {
+    margin: 74px 0 34px 0;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.personal_info {
     position: relative;
 }
 
-.info-item {
+.personal-info__li {
+    margin-bottom: 25px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -145,39 +185,90 @@ body {
 }
 
 .fio-info {
+    margin-bottom: 8px;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
-    color: var(--title-color);
-    margin-bottom: 12px;
 }
 
-.departament-info {
-    margin-bottom: 28px;
-}
-
-.number-info {
-    margin-bottom: 23px;
-}
-
-.email-info {
-    margin-bottom: 20px;
-}
-
-.avatar {
+.personal_info-avatar {
     position: absolute;
     top: 0;
     right: 0;
+    height: 135px;
+    width: 135px;
 }
 
-.btn-change-password {
-    background-color: var(--tomato-color);
+.personal-info_button {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    color: var(--button-text-color);
+    background-color: var(--tomato-color);
     padding: 7px 18px;
+}
+
+.radio-button {
+  display: inline-block;
+}
+
+.radio-button input[type=radio]{
+  display: none;
+}
+
+.radio-button label{
+  font-style: normal;
+  font-weight: 657;
+  font-size: 15px;
+  line-height: 18px;
+  display: inline-block;
+	cursor: pointer;
+	padding: 13px 5px;
+  text-align: center;
+	/*background-color: va*/
+  color: var(--button-text-color);
+  background-color: var(--tomato-color);
+}
+
+.radio-button input[type=radio]:checked + label{
+  background: var(--red-color);
+  color: var(--button-text-color);
+}
+
+.radio-button label:hover{
+  color: rgb(232, 232, 232);
+}
+
+.radio-button input[type=radio]:disabled + label{
+  background: var(--tomato-color);
+	color: var(--button-text-color);
+}
+
+.answer__radio label
+{
+  margin-bottom: 15px;
+  width: 458px;
+}
+
+.answer__body {
+  justify-content: center;
+  display: flex;
+}
+
+.question__number {
+  font-style: normal;
+  font-weight: 539;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.input-login {
+    padding: 10px;
+    background: #E4E6E7;
+    font-weight: 400;   
+    border: 0;
 }
 
 .login{
