@@ -94,11 +94,12 @@ h6 {
 /*--------------------*/
 
 :root {
-  --red-color: #FF0000;
-  --tomato-color: #FF4346;
-  --button-text-color: #FFF;
-  --header-bg-color: #293240;
-  --title-color: #0F2232;
+    --red-color:#FF0000;
+    --tomato-color:#FF4346;
+    --button-text-color: #FFF;
+    --header-bg-color:#293240;
+    --title-color:#0F2232;
+    --dark-text:#333F4A;
 }
 
 body {
@@ -114,8 +115,9 @@ body {
 }
 
 .container {
-  max-width: 70%;
-  margin: 0 auto;
+    max-width: 70%;
+    width: 1100px;
+    margin: 0 auto;
 }
 
 .content {}
@@ -224,7 +226,155 @@ body {
   display: none;
 }
 
-.radio-button label {
+.main-body{
+  color: var(--dark-text);
+  display: flex;
+  flex-direction: column;
+}
+.main__header{
+  margin: 73px 0 28px 0;
+  height: 135px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.main-body__title h1{
+  font-weight: 657;
+  font-size: 28px;
+}
+.main__sort {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.main__radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__radio label{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid transparent;
+  width: 150px;
+  padding: 12px 0;
+}
+.main__radio label:hover{
+  border: 1px solid var(--header-bg-color); 
+  border-radius: -10px;
+  transition: 0.7s;
+}
+
+.main__radio:last-child{
+  padding-left: 8px;
+}
+.main__radio input[type="radio"]:checked + label{
+  border: 1px solid transparent;
+  background: var(--red-color);
+  color: var(--button-text-color);
+}
+.main__radio label{
+  text-align: center;
+}
+.main__search {
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  max-width: 287px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #C3C7CB;
+}
+.main__search input{
+  font-size: 18px;
+  padding-left: 10px;
+  background-color: transparent;
+  flex: 1 1 auto;
+}
+.main__search img{
+  margin-left: 5px;
+  width: 23px;
+}
+.main__list {
+  max-height: 700px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main__list::-webkit-scrollbar{
+  width: 12px;
+}
+.main__list::-webkit-scrollbar-track{
+  background: #E9ECEE;
+}
+.main__list::-webkit-scrollbar-thumb{
+  background-color: #C3C7CB;
+  border-radius: 9px;
+}
+.main__item {
+  border: 1px solid #C3C7CB;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.main__item:not(:first-child){
+  margin-top: 22px;
+}
+.main__date-closed {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 35px;
+  padding-top: 18px;
+}
+.main__survey {
+  padding: 14px 35px 18px 35px;
+  display: flex;
+  align-items: center;
+}
+.main__survey-img{
+  flex: 0 1 74px;
+}
+.main__survey-img img{
+  width: 74px;
+}
+.main__survey-main {
+  flex: 1 1 auto;
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.main__survey-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+.main__date-of-create {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.main__survey-main button{
+  color: var(--button-text-color);
+  background-color: var(--tomato-color);
+  padding: 5px 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+.main__survey-main button:hover{
+  background-color: var(--red-color);
+  transition: 0.7s;
+}
+
+.answer__radio label{
   font-style: normal;
   font-weight: 657;
   font-size: 15px;
@@ -243,7 +393,7 @@ body {
   color: var(--button-text-color);
 }
 
-.radio-button label:hover {
+.answer__radio label:hover{
   color: rgb(232, 232, 232);
 }
 
@@ -287,11 +437,12 @@ body {
   text-align: center;
 }
 
-.input-login {
-  padding: 10px;
-  background: #E4E6E7;
-  font-weight: 400;
-  border: 0;
+.footer{
+  padding: 25px;
+  text-align: center;
+  margin-top: 40px;
+  background-color: var(--header-bg-color);
+  color: var(--button-text-color);
 }
 
 .login {
