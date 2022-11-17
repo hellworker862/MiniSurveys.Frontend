@@ -210,6 +210,60 @@ body {
     padding: 7px 18px;
 }
 
+.radio-button {
+  display: inline-block;
+}
+
+.radio-button input[type=radio]{
+  display: none;
+}
+
+.radio-button label{
+  font-style: normal;
+  font-weight: 657;
+  font-size: 15px;
+  line-height: 18px;
+  display: inline-block;
+	cursor: pointer;
+	padding: 13px 5px;
+  text-align: center;
+	/*background-color: va*/
+  color: var(--button-text-color);
+  background-color: var(--tomato-color);
+}
+
+.radio-button input[type=radio]:checked + label{
+  background: var(--red-color);
+  color: var(--button-text-color);
+}
+
+.radio-button label:hover{
+  color: rgb(232, 232, 232);
+}
+
+.radio-button input[type=radio]:disabled + label{
+  background: var(--tomato-color);
+	color: var(--button-text-color);
+}
+
+.answer__radio label
+{
+  margin-bottom: 15px;
+  width: 458px;
+}
+
+.answer__body {
+  justify-content: center;
+  display: flex;
+}
+
+.question__number {
+  font-style: normal;
+  font-weight: 539;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .input-login {
     padding: 10px;
     background: #E4E6E7;
