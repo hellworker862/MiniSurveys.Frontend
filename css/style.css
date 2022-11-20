@@ -452,15 +452,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 15px;
 }
 .author__body{
+  padding: 0 10px;
   max-width: 564px;
   width: 100%;
   border: 2px solid var(--tomato-color);
 }
 .author__content {
   margin: 32px auto 65px;
-  width: 312px;
+  max-width: 312px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
