@@ -10,13 +10,21 @@
 
 </head>
 <body>
-    <div class="login">
-        <img src="/img/logo.png" class="logo" alt="">
-        <h1 class="log">Вход</h1>
-            <input type="text" class="login_text input-login" placeholder="Логин" />
-            <input type="text" class="login_password input-login" placeholder="Пароль" />
-            <button class="button button-login">Войти</button>
-            <a class="help" href="#">Забыли пароль?</a>
+    <div class="author">
+        <div class="author__body">
+            <div class="author__content">
+                <img src="img/logo.png" alt="Типо логотип" class="author__logo">
+                <span class="author__title">Вход</span>
+                <input type="text" class="author__input" placeholder="Логин">
+                <input type="password" class="author__input" placeholder="Пароль">
+                <div class="author__check">
+                    <input id="author-check" type="checkbox">
+                    <label for="author-check">Запомнить меня?</label>
+                </div>
+                <button class="author__button">Войти</button>
+                <a href="#" class="author__link">Забыли пароль?</a>
+            </div>
+        </div>
     </div>
     <script src="cod.js"></script>
 </body>
