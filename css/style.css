@@ -479,7 +479,7 @@ body {
 }
 .author__input {
   background-color: #E4E6E7;
-  color: #909295;
+  color: var(--dark-text);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
