@@ -947,3 +947,9 @@ h1.error__title {
   background-color: #EC1C24;
   transition: 0.8s;
 }
+
+.main__survey-main .link-disable,.main__survey-main .link-disable:hover {
+  cursor: default;
+  pointer-events: none;
+  background-color: hsl(359, 100%, 63%, 70%);
+}
