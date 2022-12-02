@@ -314,7 +314,8 @@ main {
 }
 
 .main-body__title h1 {
-  font-weight: 657;
+  color: var(--title-color);
+  font-weight: bold;
   font-size: 28px;
 }
 
@@ -1028,4 +1029,56 @@ h1.error__title {
   cursor: default;
   pointer-events: none;
   background-color: hsl(359, 100%, 63%, 70%);
+}
+
+.main__users{
+  margin: 73px 0 28px 0;
+}
+.ultrauser__searchandbutton{
+  margin: 36px 0;
+}
+.main__table {
+  max-height: 700px;
+  overflow-y: auto;
+}
+.main__table table{
+  min-width: 100%;
+  font-style: normal;
+  font-weight:bolder;
+  font-size: 13px;
+  text-align: center;
+}
+.main__table table th{
+  outline: 2px solid #E9ECEE;
+}
+.main__table table th{
+  color: var(--button-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  background-color:var(--tomato-color);
+  min-width: 46px;
+  padding: 8px 13px;
+}
+.main__table tr>td{
+  border-bottom: 1px solid #44454592;
+  margin-top: 5px;
+  padding: 8px 0;
+}
+
+.main__table::-webkit-scrollbar {
+  width: 12px;
+}
+
+.main__table::-webkit-scrollbar-track {
+  background: #E9ECEE;
+}
+
+.main__table::-webkit-scrollbar-thumb {
+  background-color: #C3C7CB;
+  border-radius: 9px;
+}
+.td__img button{
+  background-color: #E9ECEE;
+  width: 29px;
 }
