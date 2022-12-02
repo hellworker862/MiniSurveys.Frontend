@@ -147,7 +147,7 @@ main {
   align-items: center;
 }
 
-.header__li a, .header__li span{
+.header__li a, .header__li form{
   height: 57px;
   display: flex;
   align-items: center;
@@ -166,12 +166,12 @@ main {
   color: var(--button-text-color);
 }
 
-.header__li a, .header__li span{
+.header__li a, .header__li form{
   display: flex;
   align-items: center;
 }
 
-.header__li a:hover, .header__li span:hover{
+.header__li a:hover, .header__li form:hover{
   background-color: #2d394e;
 }
 .header__li_active {
@@ -180,6 +180,10 @@ main {
 }
 .header__li_active a:hover{
   background-color: #EC1C24;
+}
+
+.header__li_active form:hover {
+    background-color: #EC1C24;
 }
 
 .header__li a img {
