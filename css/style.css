@@ -474,19 +474,38 @@ main {
   font-size: 14px;
   padding: 10px 0;
 }
-
-.main__survey-main a {
-  color: var(--button-text-color);
-  background-color: var(--tomato-color);
-  padding: 5px 30px;
+.main__survey-admin-buttons{
+  display: flex;
+}
+.main__survey-admin-buttons a{
+  margin-right: 10px;
+  border: 1px solid transparent;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
 }
-
-.main__survey-main a:hover {
+.main__survey-admin-edit{
+  color: var(--button-text-color);
+  background-color: var(--tomato-color);
+  padding: 5px 30px;
+}
+.main__survey-admin-edit:hover{
   background-color: var(--red-color);
+  transition: 0.7s;
+}
+.main__survey-admin-delete {
+  padding: 5px 30px;
+  color: var(--dark-text);
+  border: 1px solid transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+.main__survey-admin-delete:hover{
+  border: 1px solid var(--header-bg-color);
+  border-radius: -10px;
   transition: 0.7s;
 }
 
@@ -1094,7 +1113,7 @@ td.td__img  {
   width: 29px;
 }
 
-td__img form {
+.td__img form {
   background-color: #E9ECEE;
   width: 29px;
 }
