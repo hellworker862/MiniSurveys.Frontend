@@ -45,6 +45,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 input,
 button,
 textarea {
@@ -1078,7 +1082,19 @@ h1.error__title {
   background-color: #C3C7CB;
   border-radius: 9px;
 }
-.td__img button{
+
+td.td__img  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.td__img a{
+  background-color: #E9ECEE;
+  width: 29px;
+}
+
+td__img form {
   background-color: #E9ECEE;
   width: 29px;
 }
