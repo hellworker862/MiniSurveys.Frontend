@@ -1337,17 +1337,16 @@ td.td__img  {
   font-size: 14px;
   flex: 1 1 70%;
 }
+
+/*new*/
 .create-survey__body-body-item-body-link {
   margin-top: 7px;
   display: flex;
   align-items: center;
 
 }
-/* .create-survey__body-body-item-body-link input:not(:first-child){
-  margin-left: 10px;
-} */
 
-
+/*new*/
 .create-survey__body-body-item-body-link input[type=text], .create-survey__body-body-item-body-link select{
   margin-right: 10px;
   height: 26px;
